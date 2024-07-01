@@ -1,0 +1,45 @@
+{
+      "moreEventsInfo":[
+                        {
+                              "text":"Diya decoration for Diwali",
+                              "year":"2022",
+                              "imageLink":"./src/assets/Images/diyaDec.png"
+                        },{
+                              "text":"Spic Macay",
+                              "year":"2022",
+                              "imageLink":"./src/assets/Images/spicmacay.jpg"
+                        },{
+                              "text":"Break The Bias",
+                              "year":"2021",
+                              "imageLink":"./src/assets/Images/btb.jpg"
+                        },{
+                              "text":"NSS Far From Home",
+                              "year":"2021",
+                              "imageLink":"./src/assets/Images/ffh2.jpg"
+                        },{
+                              "text":"In SYNC With The World",
+                              "year":"2021",
+                              "imageLink":"./src/assets/Images/sync.PNG"
+                        },{
+                              "text":"Nukkad Naatak",
+                              "year":"2020",
+                              "imageLink":"./src/assets/Images/Nukkad-Naatak 1.jpg"
+                        },{
+                              "text":"Educational Out Reach",
+                              "year":"2020",
+                              "imageLink":"./src/assets/Images/eop2.jpg"
+                        },{
+                              "text":"Week of Love",
+                              "year":"2020",
+                              "imageLink":"./src/assets/Images/wol3.jpg"
+                        },{
+                              "text":"Women Employment Generation",
+                              "year":"2020",
+                              "imageLink":"./src/assets/Images/eop4.jpg"
+                        },{
+                              "text":"Visit To Autism School",
+                              "year":"2019",
+                              "imageLink":"./src/assets/Images/Visit To Autism School.jpg"
+                        }
+      ]
+}

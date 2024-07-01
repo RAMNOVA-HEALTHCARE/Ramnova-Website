@@ -1,0 +1,87 @@
+{
+      "OfficeBearers":[
+                  [
+                   {
+                        "name":"Prof. Sandeep S. Deshmukh",
+                        "post":"Faculty Co-ordinator",
+                        "jobInfo":"Associate Dean, Student Welfare, BITS Pilani - Hyderabad Campus",
+                        "profileLink":"https://universe.bits-pilani.ac.in/hyderabad/deshmukh/profile",
+                        "imageLink":"../src/assets/Images/ssd.jpg"
+                   },
+                   {
+                        "name":"Dr. Naraparaju. Kishore Kumar",
+                        "post":"Faculty Co-Ordinator",
+                        "jobInfo":"Associate Professor",
+                        "profileLink":"https://universe.bits-pilani.ac.in/hyderabad/nkishore/Profile",
+                        "imageLink":"../src/assets/Images/kk.jpg"
+                   },
+                   {
+                        "name":"Dr. Arti Dhar",
+                        "post":"Faculty Co-Ordinator",
+                        "jobInfo":"Associate Professor",
+                        "profileLink":"https://universe.bits-pilani.ac.in/Hyderabad/arti/Profile",
+                        "imageLink":"../src/assets/Images/artidhar.jpg"
+                   },
+                   {
+                        "name":"Dr. Jalaiah Nandanavanam",
+                        "post":"Faculty Co-Ordinator",
+                        "jobInfo":"Associate Professor",
+                        "profileLink":"https://universe.bits-pilani.ac.in/hyderabad/njalaiah/Profile/",
+                        "imageLink":"../src/assets/Images/jn.jpg"
+                   }     
+                  ],
+                  [
+                        {
+                             "name":"C Sai Vignesh",
+                             "post":"PRESIDENT",
+                             "imageLink":"../src/assets/Images/NSSPanelMembers2023/Vignesh.jpg"
+                        },
+                        {
+                             "name":"Gaurav Golchha",
+                             "post":"SECRETARY",
+                             "imageLink":"../src/assets/Images/NSSPanelMembers2023/Gaurav.jpg"
+                        },
+                        {
+                             "name":"Abbagani Gangotri",
+                             "post":"SECRETARY",
+                             "imageLink":"../src/assets/Images/NSSPanelMembers2023/Gangotri.jpg"
+                        },
+                        {
+                             "name":"Prachi Shah",
+                             "post":"COMMUNITY ENGAGEMENT LEAD",
+                             "imageLink":"../src/assets/Images/NSSPanelMembers2023/Prachi.jpg"
+                        },
+                        {
+                              "name":"Manisha Jakkula",
+                              "post":"TECHNICAL LEAD",
+                              "imageLink":"../src/assets/Images/NSSPanelMembers2023/Manisha.jpg"
+                         },
+                         {
+                              "name":"Patil Harshith Reddy",
+                              "post":"DESIGN LEAD",
+                              "imageLink":"../src/assets/Images/NSSPanelMembers2023/Harshith.jpg"
+                         },
+                         {
+                              "name":"Nymisha Reddy",
+                              "post":"EDITORIAL LEAD",
+                              "imageLink":"../src/assets/Images/NSSPanelMembers2023/Nymisha.jpg"
+                         },
+                         {
+                              "name":"Soumili Bose",
+                              "post":"EVENT CO-ORDINATOR",
+                              "imageLink":"../src/assets/Images/NSSPanelMembers2023/Soumili.jpg"
+                         },
+                         {
+                              "name":"V V Prasanth",
+                              "post":"EVENT CO-ORDINATOR",
+                              "imageLink":"../src/assets/Images/NSSPanelMembers2023/Prasanth.jpg"
+                         },
+                         {
+                              "name":"Nishil Bhavsar",
+                              "post":"STUDENT ANONYMOUS LEAD",
+                              "imageLink":"../src/assets/Images/NSSPanelMembers2023/Nishil.jpg"
+                         }       
+                       ]
+            
+      ]
+}

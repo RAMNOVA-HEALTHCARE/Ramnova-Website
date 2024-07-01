@@ -1,0 +1,43 @@
+{
+      "FooterCardData":[
+                              {
+                                    "cardTitle":"Quick Links",
+                                    "cardLinksList":[
+                                          ["About Us",
+                                          "/home"],
+                                          ["Our Products",
+                                          ""],
+                                           ["Contact Us",
+                                          ""]
+                                         
+                                    ]
+                              },
+                              {
+                                    "cardTitle":"Others",
+                                    "cardLinksList":[
+      
+                                          ["News & Events",
+                                          ""],
+                                          ["FAQs",
+                                          ""],
+                                          ["Privacy Policy",
+                                          ""],
+                                          ["Terms of Service",
+                                          ""]
+                                    ]
+                              },
+                              {
+                                    "cardTitle":"Follow Us",
+                                    "cardLinksList":[
+                                          ["Facebook",
+                                          ""],
+                                          ["LinkedIn",
+                                          ""],
+                                          ["Instagram",
+                                          ""],
+                                          ["YouTube",
+                                          ""]
+                                    ]
+                              }
+      ]
+}

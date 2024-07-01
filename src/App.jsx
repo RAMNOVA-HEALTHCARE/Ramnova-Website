@@ -1,0 +1,37 @@
+// import { useState } from 'react'
+import './App.css'
+import React from 'react';
+// import './App.css'
+import Appbar from './Components/Appbar'
+import Footer from './Components/Footer'
+// import Events from './components/Events';
+// import AboutUs from './components/AboutUs'; 
+// import OfficeBearers from './components/OfficeBearers';
+import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
+// import AllEvents from './components/AllEvents';
+// import PageNotFound from './components/PageNotFound';
+import FocusTrap from '@mui/material/Unstable_TrapFocus';
+import Carousal from './Components/Carousal';
+import AboutUs from './Components/AboutUs';
+import ContactUs from './Components/ContactUs';
+
+
+function App() {
+  // const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Router>
+        <Appbar/>
+        <Routes>
+            <Route path='/home' element={<><Carousal/><Footer/> </>}/>
+            <Route path='/aboutUs'element={<><AboutUs/><Footer/> </>}/>
+            <Route path='/contactUs'element={<><ContactUs/><Footer/></>}/>
+        </Routes>
+          
+      </Router>
+    </>
+  )
+}
+
+export default App

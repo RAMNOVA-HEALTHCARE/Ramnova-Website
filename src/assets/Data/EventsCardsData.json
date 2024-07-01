@@ -1,0 +1,22 @@
+{
+      "cardData":[
+                        {
+                              "contentYear":"2022",
+                              "contentHeading":"INDEPENDENCE DAY ORPHANAGE VISIT",
+                              "contentImageLink":"./src/assets/Images/orphanage.jpg",
+                              "contentText":"In celebration of India's 75th anniversary of its independence,we went to several orphanages all throughout the Hyderabad,Vijayawada and Rajasthan to show the kids the love they deserved.Our hearts were utterly delighted by the children's passion, joy, and affection for us.We will cherish our memories of visiting the orphanages run by the Prerna and Cheers foundations for a very long time."
+                        },
+                        {
+                              "contentYear":"2022",
+                              "contentHeading":"CLEANLINESS DRIVE",
+                              "contentImageLink":"./src/assets/Images/cleanlinessdrive.jpg",
+                              "contentText":"Lack of hygiene results in avariety of ailments, illnesses,and fly and mosquito breeding grounds.Therefore, on NSS Day, the proud Bitsians took the initiative to clean the campus."
+                        },
+                        {
+                              "contentYear":"2022",
+                              "contentHeading":"SPIC MACAY",
+                              "contentImageLink":"./src/assets/Images/spicmacay.jpg",
+                              "contentText":"The Society for the Promotion of Indian Classical Music and Culture Among Young People,SPIC MACAY, was hosted by NSS BPHCShri Dhananjay Hedge and his crew sang two fantastic Hindustani songs.The conversation and calming music occupied the entire evening."
+                        }
+      ]
+}
