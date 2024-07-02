@@ -137,8 +137,8 @@ export default function MajorDisplayCard(props) {
             component="img"
             image={props.imgL}
             sx={{
-              width: '48%',
-              minWidth: '600px',
+              width: '45%',
+              minWidth: '500px',
               transform:
                 props.transtionsActive == 'false' ?
                   'none' : trigger ?

@@ -1,12 +1,15 @@
 {
       "cardData":[
-                        {
-                              "contentImageLink":"./src/assets/Images/abt1.jpg",
-                              "contentText":"National Service Scheme is a central sector scheme of the Government of India, conducted by the Department of Youth Affairs and Sports. This scheme was launched in Gandhiji’s Centenary year, 1969 and aims at developing student’s personality by instilling a sense of social responsibility , and preparing them for the final goal – Engaging in community service and providing opportunities for the youth to take part in it. NSS is thus a concrete attempt in making campus relevant to the needs of the community."
+                        {  
+                              "contentImageLink":"./src/assets/Images/aboutUs1.png",
+                              "contentText":" We have established world-class facilities by leveraging state-of-the-art technology, incorporating best practices and adhering to stringent regulatory compliances. Our products are fully approved by prestigious supreme health authorities. We possess end-to-end capabilities – from Lab scale development to Pilot scale up and from commercializing the product for large scale manufacturing to marketing globally. We are engaged at manufacturing, supplying, and marketing of pharmaceutical drugs all over the country."
                         },
                         {
-                              "contentImageLink":"./src/assets/Images/abt2.jpg",
-                              "contentText":"The NSS BITS Pilani Hyderabad Campus chapter was sanctioned in March 2009. Since its inception, the NSS BPHC has been galvanising student enthusiasm and commitment to society and channelling it into concrete programs targeting rural citizens, economically disadvantaged school children, orphans and medical patients among others. It has now around 150 volunteers working for the social uplift of the down-trodden masses of our nation. We are an organisation through which students get an opportunity to understand the community they work in and their relationship with it."
-                        }
+                              "contentImageLink":"./src/assets/Images/aboutUs2.png",
+                              "contentText":"At Ramnova Healthcare, we achieve our objective by following our defined values. Our main principle is to do things better than before. Whether it’s for developing new products with multiple-benefits, creating drug delivery devices that produce less discomfort for patients, or getting lower-cost drugs to people with rare diseases, we’re always focused on improving the status quo."},
+                        {
+                              "contentImageLink":"./src/assets/Images/aboutUs3.png",
+                              "contentText":"Our goal is to become one of the leading pharmaceutical companies pan India by way of Growing business through Customer trust. Improving Completence day after day."}
+                        
       ]
 }
