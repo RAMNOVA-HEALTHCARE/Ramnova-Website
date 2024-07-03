@@ -1,23 +1,24 @@
 /* Sliding effect for carousel */
+.slide-content {
+  transition: transform 1s ease-in-out;
+}
+
 .slide-enter {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  }
+  transform: translateX(100%);
   
-  .slide-enter-active {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+}
+
+.slide-enter-active {
+  transform: translateX(0%);
+  transition: transform 1s ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(0%);
   
-  .slide-exit {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  }
-  
-  .slide-exit-active {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}

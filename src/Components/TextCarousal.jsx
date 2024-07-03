@@ -39,7 +39,7 @@ const TextCarousel = () => {
           prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
         );
       }
-    }, 500);
+    }, 1000);
   };
 
   const arrowStyle = {

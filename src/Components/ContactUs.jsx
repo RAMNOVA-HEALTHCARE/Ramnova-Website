@@ -4,6 +4,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
+
+//color change dekhna h kya karein ??
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: '',
@@ -35,7 +37,7 @@ export default function ContactUs() {
   return (
     <Box sx={{ backgroundColor: '#f5f5f5', padding: '2rem 0' }}>
       <Container maxWidth="md">
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" sx={{textDecoration: 'underline' , mb: '0.5em'}}  gutterBottom>
           Contact Us
         </Typography>
         <Box
@@ -60,7 +62,7 @@ export default function ContactUs() {
               transition: 'background-color 0.3s',
               color: '#222323', // Text color when not hovered
               '&:hover': {
-                backgroundColor: '#e0583b',
+                backgroundColor: '#3D1F2B',
                 color: 'white', // Text color on hover
               },
               flex: '1 1 300px', // Equal width for all boxes, adjust as needed
@@ -82,7 +84,7 @@ export default function ContactUs() {
               transition: 'background-color 0.3s',
               color: '#222323', // Text color when not hovered
               '&:hover': {
-                backgroundColor: '#e0583b',
+                backgroundColor: '#3D1F2B',
                 color: 'white', // Text color on hover
               },
               flex: '1 1 300px', // Equal width for all boxes, adjust as needed
@@ -104,7 +106,7 @@ export default function ContactUs() {
               transition: 'background-color 0.3s',
               color: '#222323', // Text color when not hovered
               '&:hover': {
-                backgroundColor: '#e0583b',
+                backgroundColor: '#3D1F2B',
                 color: 'white', // Text color on hover
               },
               flex: '1 1 300px', // Equal width for all boxes, adjust as needed
@@ -169,7 +171,7 @@ export default function ContactUs() {
               onChange={handleChange}
               required
             />
-            <Button variant="contained" color="primary" type="submit" fullWidth sx={{ backgroundColor: '#222323', color: 'white', '&:hover': { backgroundColor: '#e0583b' } }}>
+            <Button variant="contained" color="primary" type="submit" fullWidth sx={{ backgroundColor: '#222323', color: 'white', '&:hover': { backgroundColor: '#3D1F2B' } }}>
               Send Message
             </Button>
           </Box>
