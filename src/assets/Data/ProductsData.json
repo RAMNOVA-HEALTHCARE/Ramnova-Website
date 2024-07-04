@@ -1,0 +1,33 @@
+{
+      "ProductsData":[
+            {
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 1G"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 2G"
+            },{
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 3G"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 4G"
+            },{
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 1G"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 2G"
+            },{
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 3G"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
+                  "productName":"BLEMANGO - 4G"
+            }
+      ]
+}

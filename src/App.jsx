@@ -17,7 +17,7 @@ import ContactUs from './Components/ContactUs';
 import FeatureBox from './Components/FeatureBox';
 import Slider from './Components/ProductSlide';
 import AboutRamnova from './Components/AboutRamnova';
-
+import Products from './Components/Products';
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -29,9 +29,8 @@ function App() {
             <Route path='/home' element={<><Carousal/><AboutRamnova/><FeatureBox/><Slider/><Footer/></>}/>
             <Route path='/aboutUs'element={<><AboutUs/><Footer/> </>}/>
             <Route path='/contactUs'element={<><ContactUs/><Footer/></>}/>
-            <Route path='/products'element={<><Footer/> </>}/>
+            <Route path='/products'element={<><Products/><Footer/> </>}/>
         </Routes>
-          
       </Router>
     </>
   )

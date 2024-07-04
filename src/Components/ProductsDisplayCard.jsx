@@ -4,21 +4,22 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import { Typography } from "@mui/material"
 
-export default function ProductsDisplayCard(){
+export default function ProductsDisplayCard({ i, handleProductClick, checker, ProductName, ProductImageLink }){
       return (
       <Card sx={{ maxWidth: 345,borderRadius:'15px'}}>
                         <CardActionArea 
-                        onClick={()=>{
-                                          alert('hellow');
+                       onClick={(e) => {
+                                          e.stopPropagation();    
+                                          console.log(checker)
+                                          handleProductClick(checker, i);
+                                          console.log(checker)
                               }}
                         >
                               <CardMedia
                                     component="img"
-                                    image="./src/assets/Images/Supplements/blemango-5G.png"
-                                    alt="green iguana"
+                                    image={ProductImageLink}
+                                    alt="fetch error"
                                     sx={{
-                                          color:'red',
-                                          backgroundColor:'yellow',
                                           maxHeight:'250px',
                                     }}
                               />
@@ -27,8 +28,9 @@ export default function ProductsDisplayCard(){
                                                          fontWeight: '400',
                                                       }}
                                     >
-                                          BLEMANGO - 5G
+                                          {ProductName}
                                     </Typography>
+                                    
                               </CardContent>
                         </CardActionArea>
                   </Card>
