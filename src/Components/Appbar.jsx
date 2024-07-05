@@ -17,7 +17,7 @@ import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router
 const pagesInfo = [{ page: 'home', pageLink: '/home' },
 { page: 'products', pageLink: '/products' },
 { page: 'about Us', pageLink: '/aboutUs' },
-{ page: 'contact us', pageLink: '/contactUs' }
+{ page: 'contact Us', pageLink: '/contactUs' }
 
 // add this in the future,req backend
 // ,{ page: 'Contact Us', pageLink: '/contactUs' }
@@ -72,8 +72,8 @@ function Appbar() {
             <>
         <div style={{marginBottom:'70px'}}></div>
 
-            <AppBar position="fixed" style={{ paddingLeft: '0', paddingRight: '0', background: '#353a40' }}>
-                  <Container maxWidth="true" sx={{ paddingLeft: '0', paddingRight: '0', background: '#353a40', height: '70px', }} >
+            <AppBar position="fixed" style={{ paddingLeft: '0', paddingRight: '0', background: '#353A40' }}>
+                  <Container maxWidth="true" sx={{ paddingLeft: '0', paddingRight: '0', background: '#353A40', height: '70px', }} >
                         <Toolbar disableGutters sx={{
                               paddingLeft: '0px',
                               paddingRight: '0px',
@@ -104,47 +104,6 @@ function Appbar() {
                                                     alt="Ramnova HealthCare"
                                                     style={{ marginLeft:'1em' , maxWidth: '35%', height: 'auto' }}
                                                 />
-
-
-
-                                          {/* <Typography
-                                                variant="h6"
-                                                noWrap
-                                                sx={{
-                                                      ml: 2,
-                                                      mr: 2,
-                                                      display: { xs: 'none', md: 'flex' },
-                                                      fontFamily: 'sans-serif',
-                                                      letterSpacing: '.1rem',
-                                                      fontSize: isSmallMobile ? '16px' : '1.25rem',
-                                                      color: 'inherit',
-                                                      textDecoration: 'none',
-                                                }}
-                                                >
-                                                RAMNOVA 
-                                          </Typography>
-                                          <Typography variant="caption" sx={{ display: { xs: 'none', md: 'flex' }, fontSize: '10px', ml: 2 }} gutterBottom>
-                                                HealthCare
-                                          </Typography> */}
-                                          {/* <Typography
-                                                variant="h5"
-                                                noWrap
-                                                sx={{
-                                                      mr: 2,
-                                                      ml: 2,
-                                                      display: { xs: 'flex', md: 'none' },
-                                                      flexGrow: 1,
-                                                      fontFamily: 'sans-serif',
-                                                      letterSpacing: '0',
-                                                      color: 'inherit',
-                                                      fontSize: isSmallMobile ? '16px' : '1.25rem',
-                                                      textDecoration: 'none',
-                                                      
-                                                }}
-                                                >
-                                                NATIONAL SERVICE SCHEME
-                                          </Typography> */}
-                                          
                                     </Link>
 
                               </Box>
@@ -155,11 +114,13 @@ function Appbar() {
                                           onClick={() => handleClick(pageInfo)}
                                           sx={{
                                                 my: 2,
-                                                color:activePage==pageInfo.page?'#f1623a':'white',
-                                                borderBottom:activePage==pageInfo.page?"1px solid white":'none',
+                                                color:activePage==pageInfo.page?'#FF204E':'white',
+                                                borderBottom:activePage==pageInfo.page?"1px solid #FF204E":'none',
+                                                borderRadius:'0',
                                                 display: 'block',
+                                                // backgroundColor:activePage==pageInfo.page?"grey":'none',
                                                 ':hover': {
-                                                      color: '#e0583b',
+                                                      // color: '#74512D',    
                                                       cursor: 'pointer',
                                                 },
                                           }}
@@ -177,15 +138,15 @@ sx={{
       display: { xs: 'flex', lg: 'none' },
 }}>
                                     <IconButton
-                                          sx={{ padding: 0, marginRight: '5px' }}
+                                          sx={{ padding: 0, marginRight: '5px',color:"white" }}
                                           size="large"
                                           aria-label="account of current user"
                                           aria-controls="menu-appbar"
                                           aria-haspopup="true"
                                           onClick={handleOpenNavMenu}
-                                          color="inherit"
+                                            
                                           >
-                                          <MenuIcon />
+                                          <MenuIcon/>
                                     </IconButton>
                                     <Menu
                                           id="menu-appbar"
@@ -214,7 +175,7 @@ sx={{
                                                       <Link to={pageInfo.pageLink}
                                                       key={pageInfo.page}
                                                       style={{
-                                                            color: "inherit",
+                                                            color: "white",
                                                             textDecoration: 'none',
                                                       }}>
                                                             <MenuItem
@@ -223,11 +184,11 @@ sx={{
                                                                         handleCloseNavMenu();
                                                                   }}
                                                                   sx={{
-                                                                        background: '#353a40',
+                                                                        background: '#353A40',
                                                                         color: 'white',
                                                                         ':hover': {
-                                                                              color: '#e0583b',
-                                                                              background: '#353a40',
+                                                                              color: '#FF204E',
+                                                                              background: '#353A40',
                                                                               cursor: 'pointer',
                                                                         },
                                                                   }}>

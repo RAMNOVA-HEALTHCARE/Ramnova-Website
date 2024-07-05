@@ -77,7 +77,7 @@ export default function Carousal() {
       <IconButton style={{position: 'absolute', left: 0,top:'calc(50vh - 55px)',zIndex:'2'}}>
                               <Box sx={{
                                     ':hover': {
-                                          backgroundColor:'#e0583b',
+                                      backgroundColor:'#A0937D',
                                           cursor: 'pointer',
                                     },
                                     '@media (min-width: 960px)': {
@@ -88,7 +88,7 @@ export default function Carousal() {
                                           height: '35px',
                                           width: '35px',
                                     },
-                                    backgroundColor: '#f1623a',
+                                    backgroundColor: 'grey',
                                     height: '25px',
                                     width: '25px',
                                     display: 'flex',
@@ -96,7 +96,8 @@ export default function Carousal() {
                                     justifyContent: 'center',
                                     borderRadius: '50%',
                               }}>
-                                    <ArrowLeftIcon sx={{ color: 'white', 
+                                    <ArrowLeftIcon 
+                                                sx={{ color: '#FDFFD2', 
                                                          fontSize: '20px',
                                                          '@media (min-width: 960px)': {
                                                          fontSize: '55px'
@@ -137,7 +138,7 @@ export default function Carousal() {
                   '@media (max-height: 320px), (max-width: 480px)': {
                     fontSize: '40px'
                   }
-                }}>{headingText}<span style={{ color: "#f1633b" }}> {heighlightedHeadingText}</span></Typography>
+                }}>{headingText}<span style={{ color: "#E88D67" }}> {heighlightedHeadingText}</span></Typography>
                  <Typography
                 variant="body2"
                 color='white'
@@ -180,7 +181,7 @@ export default function Carousal() {
        <IconButton style={{ position: 'absolute', right: 0,top:'calc(50vh - 55px)'}}>
                               <Box sx={{
                                     ':hover': {
-                                          backgroundColor:'#e0583b',
+                                          backgroundColor:'#A0937D',
                                           cursor: 'pointer',
                                     },
                                     '@media (min-width: 960px)': {
@@ -191,7 +192,7 @@ export default function Carousal() {
                                           height: '35px',
                                           width: '35px',
                                     },
-                                    backgroundColor: '#f1623a',
+                                    backgroundColor: 'grey',
                                     height: '25px',
                                     width: '25px',
                                     display: 'flex',
@@ -199,7 +200,7 @@ export default function Carousal() {
                                     justifyContent: 'center',
                                     borderRadius: '50%',
                               }}>
-                                    <ArrowRightIcon sx={{ color: 'white', 
+                                    <ArrowRightIcon sx={{ color: '#FDFFD2', 
                                                          fontSize: '20px',
                                                          '@media (min-width: 960px)': {
                                                          fontSize: '55px'

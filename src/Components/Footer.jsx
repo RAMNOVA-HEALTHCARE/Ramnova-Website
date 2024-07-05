@@ -5,16 +5,17 @@ import SubFooterTwo from './SubFooterTwo';
 import SubFooterThree from './SubFooterThree';
 
 const BottomFooter = () => (
-            <div style={{ height: '30px', backgroundColor: '#222323', color: 'white', textAlign: 'center', justifyContent: 'center', padding: '5px'}}>
+            <div  style={{ height: '30px', backgroundColor: '#222323', color: 'white', textAlign: 'center', justifyContent: 'center', padding: '5px',
+                  position:'relative',bottom:'0px'
+            }}>
                   Copyright © | Ramnova Healthcare
             </div>
 )
 export default function Footer() {
 
-      
       return (
             <>
-                  <Grid container width='100%' minHeight='340px' zIndex={'3'} >
+                  <Grid container width='100%' minHeight='340px' zIndex={'3'} style={{position:'relative',bottom:'0px'}}>
                         <Grid item xs={12} sm={6} md={3}
                               sx={{
                                     backgroundColor: '#222323',

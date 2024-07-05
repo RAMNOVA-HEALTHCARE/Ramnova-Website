@@ -30,7 +30,6 @@ export default function ProductsDisplayCard({ i, handleProductClick, checker, Pr
                                     >
                                           {ProductName}
                                     </Typography>
-                                    
                               </CardContent>
                         </CardActionArea>
                   </Card>

@@ -24,8 +24,8 @@ if (cardDatalocal.length === 0) {
             <>
             <Jumbotron
                   key={backgroundImageLink}
-             heading={"WHO"}
-             heightlighterHeading={<span key="highlight" style={{color:"#f1633b"}}> WE ARE ?</span>}
+             heading={"WHO are "}
+             heightlighterHeading={<span key="highlight" style={{color:"#E88D67"}}>WE ?</span>}
             //  heightlighterHeading={<span key="highlight" style={{color:"#f1633b"}}>WE</span>}
              bodyText={["At Ramnova Healthcare, we are dedicated to revolutionizing the pharmaceutical industry in India. Headquartered in Gujarat, Our passionate team is committed to delivering high-quality healthcare solutions. With state-of-the-art facilities and a relentless drive for innovation, we aim to improve lives and set new standards in the industry."]}
             // highlightedBodeyText={['NOT ME BUT YOU!']}

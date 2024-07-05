@@ -44,7 +44,7 @@ export default function Products() {
                               fontFamily: '"Mundo Serif Medium", serif',
                               fontWeight: '800',
                               fontSize: '2.3em',
-                              padding: '0.8em',
+                              padding: '0.8em'
                         }}
                         >
                         Our Products
