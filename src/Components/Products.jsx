@@ -2,22 +2,21 @@ import { alertClasses, Backdrop, Button, Grid,Typography, useScrollTrigger } fro
 import ProductsDisplayCard from "./ProductsDisplayCard";
 import { useEffect,useState } from "react";
 import ProductsData from "../assets/Data/ProductsData.json";
-import {LinearProgress} from "@mui/material";
-import ProductView from "./ProductView"
+import {LinearProgress,Pagination,Stack,Box} from "@mui/material";
+import ProductView from "./ProductView";
+import { alignProperty } from "@mui/material/styles/cssUtils";
+
 export default function Products() {
       const [productsCardsData,setProductsCardsData]=useState([]);
       const [ind,setInd]=useState(0);
       const [open, setOpen] =useState(false);
-
+      const [pageNumber,setPageNumber]=useState(1);
+      const [numberOfpages,setNumberOfpages]=useState(0);
       useEffect(()=>{
             setProductsCardsData(ProductsData.ProductsData);
+            setNumberOfpages(Math.ceil(productsCardsData.length/6.0));
+            console.log(numberOfpages,productsCardsData.length/6.0);
       },[])
-
-      if(productsCardsData.length===0){
-            return (
-                  <LinearProgress/>
-            )
-      }
 
       const handleProductClick=(c,index)=>{
             if(!c){
@@ -34,7 +33,12 @@ export default function Products() {
   const handleOpen = () => {
     setOpen(true);
   };
-
+  if(productsCardsData.length===0 ||  numberOfpages===0){
+      return (
+            <LinearProgress/>
+      )
+}
+else{
       return (
             <>
 
@@ -56,7 +60,7 @@ export default function Products() {
                         padding={0}
                         justifyContent={'center'}>
                               {
-                                    productsCardsData.map((productDataCard,index)=> {
+                                    productsCardsData.slice((pageNumber-1)*6,(pageNumber)*6).map((productDataCard,index)=> {
                                           return(
                                                 <Grid item lg={4} sm={6} xs={12} key={index}>
                                                       <ProductsDisplayCard 
@@ -86,8 +90,22 @@ export default function Products() {
                                     })
                               }
                   </Grid>
+     
+                  <Box sx={{
+                        display:'flex',
+                        justifyContent:'center'
+                  }}>
 
+            <Stack spacing={2} marginTop={10} >
+            <Pagination count={numberOfpages} defaultPage={1} showFirstButton showLastButton 
+                        onChange={(e, value) => {setPageNumber(value);
+                                                 window.scrollTo({top:0,behavior:'smooth'})
+                        }}/>
+      </Stack>
+                  </Box>
+     
             </div>
             </>
       )
+}
 }
