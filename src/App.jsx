@@ -26,11 +26,12 @@ function App() {
       <Router>
         <Appbar/>
         <Routes>
-            <Route path='/home' element={<><Carousal/><AboutRamnova/><FeatureBox/><Slider/><Footer/></>}/>
-            <Route path='/aboutUs'element={<><AboutUs/><Footer/> </>}/>
-            <Route path='/contactUs'element={<><ContactUs/><Footer/></>}/>
-            <Route path='/products'element={<><Products/><Footer/> </>}/>
+            <Route path='/home' element={<><Carousal/><AboutRamnova/><FeatureBox/><Slider/></>}/>
+            <Route path='/aboutUs'element={<><AboutUs/></>}/>
+            <Route path='/products'element={<><Products/></>}/>
+            <Route path='/contactUs'element={<><ContactUs/></>}/>
         </Routes>
+        <Footer/>
       </Router>
     </>
   )

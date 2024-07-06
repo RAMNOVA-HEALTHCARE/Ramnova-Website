@@ -61,11 +61,11 @@ export default function MajorDisplayCard(props) {
             borderLeft:
               props.transtionsActive == 'false' ?
                 '0' :
-                leftwards & props.cardtheme == 'light' ? 'solid black 2px' : 'solid 0',
+                leftwards & props.cardtheme == 'light' ? 'solid #EFBC9B 2px' : 'solid 0',
             borderRight:
               props.transtionsActive == 'false' ?
                 '0' :
-                leftwards || props.cardtheme != 'light' ? '0' : 'solid black 2px'
+                leftwards || props.cardtheme != 'light' ? '0' : 'solid #EFBC9B 2px'
           }}
           border={0}
           sx={{

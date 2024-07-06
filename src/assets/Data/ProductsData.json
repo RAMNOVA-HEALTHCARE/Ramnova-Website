@@ -1,33 +1,154 @@
 {
       "ProductsData":[
             {
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 1G"
+                  "productImageLink":"./src/assets/Images/allprod/a.jpg",
+                  "productName":"ACEORAM-P",
+                  "ProductDiscription":"Aceclofenac 100 mg + Paracetamol 325 mg Tablets",
+                  "ProductCategory":"Tablets"
             },
             {
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 2G"
+                  "productImageLink":"./src/assets/Images/allprod/b.jpg",
+                  "productName":"ACEORAM-SP",
+                  "ProductDiscription":"Aceclofenac 100 mg + Paracetamol 325 mg + Serratiopeptidase 15 mg Tablets",
+                  "ProductCategory":"Tablets"
             },{
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 3G"
+                  "productImageLink":"./src/assets/Images/allprod/c.jpg",
+                  "productName":"BLEMANGO-5G",
+                  "ProductDiscription":"Omega-3 Fatty Acids,Ginkgo Biloba Extract, Ginseng Extract, Green Tea Extract, Grape Seed Extract, Multimineral Multivitamin with Antioxidants & Trace Elements Soft Gelatin Capsules",
+                  "ProductCategory":"Capsules"
             },
             {
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 4G"
+                  "productImageLink":"./src/assets/Images/allprod/d.jpg",
+                  "productName":"BLEMANGO SYRUP",
+                  "ProductDiscription":"Multivitamin,Multimineral with Astaxanthin Syrup",
+                  "ProductCategory":"Syrup"
             },{
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 1G"
+                  "productImageLink":"./src/assets/Images/allprod/e.jpg",
+                  "productName":"CADISUN-D3",
+                  "ProductDiscription":"Cholecalciferol 60000 I.U. Soft Gelatin Capsules",
+                  "ProductCategory":"Capsules"
             },
             {
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 2G"
+                  "productImageLink":"./src/assets/Images/allprod/f.jpeg",
+                  "productName":"CADMIZORB-500",
+                  "ProductDiscription":"Calcium Carbonate + Vitamin D3 250 I.U. Tablets",
+                  "ProductCategory":"Tablets"
             },{
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 3G"
+                  "productImageLink":"./src/assets/Images/allprod/g.jpg",
+                  "productName":"CADMIZORB",
+                  "ProductDiscription":"Calcium Citrate + Vitamin D + Methylcobalamin + Magnesium + Zinc + Folic Acid & Pyridoxine HCL Tablets",
+                  "ProductCategory":"Tablets"
             },
             {
-                  "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 4G"
+                  "productImageLink":"./src/assets/Images/allprod/h.jpg",
+                  "productName":"CADMIZORB-MAX",
+                  "ProductDiscription":"Omega 3 Fatty Acids 300mg + Methylcobalamin 1500 mcg  + Calcium Carbonate 500 mg + Calcitriol0.25 mcg + Folic Acid 200mcg + Boron 1.5 mg Soft Gelatin Capsules",
+                  "ProductCategory":"Capsules"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/i.jpg",
+                  "productName":"CADMIZORB-PLUS",
+                  "ProductDiscription":"Calcium Carbonate 500mg + Calcitriol 0.25 mcg + Vitamin k₂7 45 mg + Methylcobalamin 750mcg + Magnesium 20mg + Boron1.5mg+ Zinc 7.5mg Soft Gel Capsules",
+                  "ProductCategory":"Capsules"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/j.jpg",
+                  "productName":"CADMIZORB-FEM",
+                  "ProductDiscription":"Calcium Carbonate 500mg+Calcitriol 0.25 mcg +  Vitamin K2-7.45mg + Soya isoflavones 40% 50 mg + Magnesium 50mg Soft Gelatin Capsules",
+                  "ProductCategory":"Capsules"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/k.jpg",
+                  "productName":"ESORUSK-D",
+                  "ProductDiscription":"Esomeprazole 40 mg +Domperidone 30 mg SR Capsules",
+                  "ProductCategory":"Capsules"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/l.jpg",
+                  "productName":"ESORUSK-LS",
+                  "ProductDiscription":"Esomeprazole 40 mg +Levosulpiride 75 mg SR Capsules",
+                  "ProductCategory":"Capsules"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/m.jpeg",
+                  "productName":"KRUJOCET-M",
+                  "ProductDiscription":"Levocetirizine 5 mg + Montelukast 10 mg Tablets",
+                  "ProductCategory":"Tablets"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/m1.jpg",
+                  "productName":"KRUJOKAST-F",
+                  "ProductDiscription":"Fexofenadine 120mg + Montelukast 10mg",
+                  "ProductCategory":"Tablets"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/n.jpeg",
+                  "productName":"MEPRISHOT-1g/125mg",
+                  "ProductDiscription":"Meropenem Injection IP 125MG Injection",
+                  "ProductCategory":"Injection"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/o.jpeg",
+                  "productName":"PIPROSHOT 4.5g",
+                  "ProductDiscription":"Piperacillin & Tazobactam Injection IP Injection",
+                  "ProductCategory":"Injection"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/p.jpg",
+                  "productName":"PROSTEOSOL-D",
+                  "ProductDiscription":"Tamsulosin HCL SR) 0.4 mg + Dutasteride 0.5 mg Tablets",
+                  "ProductCategory":"Tablets"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/q.jpeg",
+                  "productName":"RUSKITOP-DSR",
+                  "ProductDiscription":"Enteric Coated Pantoprazole Sodium & Domperidone SR Capsules",
+                  "ProductCategory":"Capsules"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/r.jpg",
+                  "productName":"RUSKIRAB-DSR",
+                  "ProductDiscription":"Rabeprazole 20 mg + Domperidone 30 mg SR Capsules",
+                  "ProductCategory":"Capsules"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/s.jpg",
+                  "productName":"RUSKIRAB-L",
+                  "ProductDiscription":"Rabeprazole 20 mg + Levosulpiride 75 mg SR Capsules",
+                  "ProductCategory":"Capsules"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/t.jpg",
+                  "productName":"ROSEORAM-1000",
+                  "ProductDiscription":"Evening Primrose Oil 1000 mg Softgel Capsules",
+                  "ProductCategory":"Capsules"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/u.jpg",
+                  "productName":"ROSEORAM-500",
+                  "ProductDiscription":"Evening Primrose Oil 500 mg Softgel Capsules",
+                  "ProductCategory":"Capsules"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/v.jpeg",
+                  "productName":"SIZEDOB",
+                  "ProductDiscription":"Calcium Dobesilate Monohydrate Capsules",
+                  "ProductCategory":"capsules"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/w.jpeg",
+                  "productName":"SIZEHEM-XT",
+                  "ProductDiscription":"Ferrous Ascorbate & Folic acid Tablets",
+                  "ProductCategory":"Tablets"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/x.jpeg",
+                  "productName":"SIZECLAV-625",
+                  "ProductDiscription":"Amoxicillin 500 & Clavulanic Acid 125 Tablets",
+                  "ProductCategory":"Tablets"
+            },
+            {
+                  "productImageLink":"./src/assets/Images/allprod/y.jpg",
+                  "productName":"SILIRAM-MAX",
+                  "ProductDiscription":"Silymarin,L-Ornithine-L-Aspartate , Tricholinecitrate & Multivitamin Syrup",
+                  "ProductCategory":"Syrup"
+            },{
+                  "productImageLink":"./src/assets/Images/allprod/z.jpeg",
+                  "productName":"URSORAM 300/150mg",
+                  "ProductDiscription":"Ursodeoxycholic Acid  IP 300/150 mg Tablets",
+                  "ProductCategory":"Tablets"
             }
       ]
 }
