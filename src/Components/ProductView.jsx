@@ -47,13 +47,13 @@ export default function ProductsDisplayCard({ i, handleProductClick, checker, Pr
                         sx={{
                               margin: '5px',
                               marginRight: '0',
-                              borderRadius: '60px',
-                              maxWidth: '60%',
+                              borderRadius: '10px',
+                              maxWidth: '50%',
                               objectFit: 'contain',
                               '@media (max-width:786px)': {
                                     margin: '5px auto',
-                                    borderRadius: '60px',
-                                    maxWidth: '80%',
+                                    borderRadius: '20px',
+                                    maxWidth: '60%',
                               }
                         }}
                   />

@@ -5,12 +5,16 @@ import "react-multi-carousel/lib/styles.css";
 import "../assets/Styles/Product.css";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import localImage1 from '../assets/Images/Supplements/blemango-5G.png';
-import localImage2 from '../assets/Images/beauty/roseoram-100.png';
-import localImage3 from '../assets/Images/Urinary/prosteosol.jpg';
-import localImage4 from '../assets/Images/Ortho/cadisun.jpg';
-import localImage5 from '../assets/Images/Gastro/Esorusk-LS.jpg';
-import localImage6 from '../assets/Images/Ortho/Cadmizorb.png';
+import localImage1 from '../assets/Images/allprod/v.jpeg';
+import localImage2 from '../assets/Images/allprod/f.jpeg';
+import localImage3 from '../assets/Images/allprod/g.jpg';
+import localImage4 from '../assets/Images/allprod/z.jpeg';
+import localImage5 from '../assets/Images/allprod/y.jpg';
+import localImage6 from '../assets/Images/allprod/w.jpeg';
+import localImage7 from '../assets/Images/allprod/d.jpg';
+import localImage8 from '../assets/Images/allprod/s.jpg';
+
+
 
 const responsive = {
   desktop: {
@@ -36,7 +40,9 @@ const sliderImageUrl = [
   { url: localImage3 },
   { url: localImage4 },
   { url: localImage5 },
-  { url: localImage6 }
+  { url: localImage6 },
+  { url: localImage7 },
+  { url: localImage8 }
 ];
 
 const Slider = () => {
@@ -55,7 +61,7 @@ const Slider = () => {
       <Carousel
         responsive={responsive}
         autoPlay={true}
-        autoPlaySpeed={2000} // Slower sliding interval (4 seconds)
+        autoPlaySpeed={3000} // Slower sliding interval (4 seconds)
         transitionDuration={1000} // Slower sliding animation (1 second)
         swipeable={true}
         draggable={true}
