@@ -3,6 +3,7 @@ import ProductsDisplayCard from "./ProductsDisplayCard";
 import { useEffect,useState } from "react";
 import ProductsData from "../assets/Data/ProductsData.json";
 import {LinearProgress} from "@mui/material";
+import ProductView from "./ProductView"
 export default function Products() {
       const [productsCardsData,setProductsCardsData]=useState([]);
       const [ind,setInd]=useState(0);
@@ -62,7 +63,7 @@ export default function Products() {
                                                             i={index}
                                                             handleProductClick={handleProductClick}
                                                             checker={open}
-
+                                                            ProductCategory={productDataCard.ProductCategory}
                                                             ProductName={productDataCard.productName}
                                                             ProductImageLink={productDataCard.productImageLink}
                                                             />
@@ -71,12 +72,13 @@ export default function Products() {
             open={open}
             onClick={handleClose}
             >
-        <ProductsDisplayCard
+        <ProductView
                   i={ind}
                   handleProductClick={handleProductClick}
                   checker={open}
                   ProductName={productsCardsData[ind].productName}
                   ProductImageLink={productsCardsData[ind].productImageLink}
+                  ProductDiscription={productsCardsData[ind].ProductDiscription}
       />
       </Backdrop>
                                                 </Grid>

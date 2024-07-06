@@ -2,32 +2,48 @@
       "ProductsData":[
             {
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 1G"
+                  "productName":"BLEMANGO - 1G",
+                  "ProductDiscription":"lorem asdfasdfboqwefbweof wieboqwevgiuwebgo e oegboeiub",
+                  "ProductCategory":"categ"
             },
             {
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 2G"
+                  "productName":"BLEMANGO - 2G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             },{
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 3G"
+                  "productName":"BLEMANGO - 3G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             },
             {
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 4G"
+                  "productName":"BLEMANGO - 4G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             },{
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 1G"
+                  "productName":"BLEMANGO - 1G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             },
             {
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 2G"
+                  "productName":"BLEMANGO - 2G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             },{
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 3G"
+                  "productName":"BLEMANGO - 3G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             },
             {
                   "productImageLink":"./src/assets/Images/Supplements/blemango-5G.png",
-                  "productName":"BLEMANGO - 4G"
+                  "productName":"BLEMANGO - 4G",
+                  "ProductDiscription":"hellow",
+                  "ProductCategory":"categ"
             }
       ]
 }
