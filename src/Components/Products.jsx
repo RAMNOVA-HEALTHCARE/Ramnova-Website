@@ -1,111 +1,151 @@
-import { alertClasses, Backdrop, Button, Grid,Typography, useScrollTrigger } from "@mui/material"
+import { Backdrop, Grid, Typography } from "@mui/material";
 import ProductsDisplayCard from "./ProductsDisplayCard";
-import { useEffect,useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import ProductsData from "../assets/Data/ProductsData.json";
-import {LinearProgress,Pagination,Stack,Box} from "@mui/material";
+import { LinearProgress, Pagination, Stack, Box } from "@mui/material";
 import ProductView from "./ProductView";
-import { alignProperty } from "@mui/material/styles/cssUtils";
 
 export default function Products() {
-      const [productsCardsData,setProductsCardsData]=useState([]);
-      const [ind,setInd]=useState(0);
-      const [open, setOpen] =useState(false);
-      const [pageNumber,setPageNumber]=useState(1);
-      const [numberOfpages,setNumberOfpages]=useState(0);
-      useEffect(()=>{
-            setProductsCardsData(ProductsData.ProductsData);
-            setNumberOfpages(Math.ceil(productsCardsData.length/6.0));
-            console.log(numberOfpages,productsCardsData.length/6.0);
-      },[])
+      const [productsCardsData, setProductsCardsData] = useState([]);
+      const [ind, setInd] = useState(0);
+      const [open, setOpen] = useState(false);
+      const [pageNumber, setPageNumber] = useState(1);
+      const [numberOfpages, setNumberOfpages] = useState(1);
 
-      const handleProductClick=(c,index)=>{
-            if(!c){
+      useEffect(() => {
+            const data = ProductsData.ProductsData;
+            setProductsCardsData(data);
+            setNumberOfpages(Math.ceil(data.length / 6.0));
+      }, []);
+
+      const handleProductClick = (c, index) => {
+            if (!c) {
                   setInd(index);
                   handleOpen();
             }
-            return c,index;
-      }
+            return c, index;
+      };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+      const handleClose = () => {
+            setOpen(false);
+      };
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  if(productsCardsData.length===0 ||  numberOfpages===0){
-      return (
-            <LinearProgress/>
-      )
-}
-else{
-      return (
-            <>
+      const handleOpen = () => {
+            setOpen(true);
+      };
 
-            <div style={{ maxWidth: '85%', margin: 'auto', marginBottom: '100px',marginTop:'0', backgroundColor: '#DDDDDD', padding: '45px',paddingTop:'0',borderRadius:'5px'}}>
-                  <Typography
-                        variant="h2"
-                        sx={{
-                              fontFamily: '"Mundo Serif Medium", serif',
-                              fontWeight: '800',
-                              fontSize: '2.3em',
-                              padding: '0.8em'
-                        }}
-                        >
-                        Our Products
-                  </Typography>
-                  <Grid container 
-                        spacing={2} 
-                        rowGap={'10px'}
-                        padding={0}
-                        justifyContent={'center'}>
-                              {
-                                    productsCardsData.slice((pageNumber-1)*6,(pageNumber)*6).map((productDataCard,index)=> {
-                                          return(
+      const paginatedProducts = useMemo(() => {
+            const startIndex = (pageNumber - 1) * 6;
+            const endIndex = startIndex + 6;
+            return productsCardsData.slice(startIndex, endIndex);
+      }, [pageNumber, productsCardsData]);
+
+      if (productsCardsData.length === 0) {
+            return <LinearProgress />;
+      } else {
+            return (
+                  <>
+                        <Box
+          sx={{
+            maxWidth: '90%',
+            margin: 'auto',
+            marginBottom: '100px',
+            marginTop: '150px',
+            backgroundColor: '#3a1f2a',
+            paddingTop: '0',
+            borderRadius: '15px',
+            padding: '45px',
+            '@media (max-width:470px)': {
+              padding: '15px'
+            }
+          }}
+        >
+                              <Typography
+                                    variant="h2"
+                                    sx={{
+                                          fontFamily: '"Mundo Serif Medium", serif',
+                                          fontWeight: '100',
+                                          fontSize: '2.3em',
+                                          padding: '0.8em',
+                                          color: 'white',
+                                          '@media (max-width:470px)':{
+                        fontSize:'1.9rem',
+                  }
+                                    }}
+                              >
+                                    Our Products
+                              </Typography>
+                              <Grid container
+                                    spacing={2}
+                                    rowGap={'10px'}
+                                    padding={0}
+                                    justifyContent={'center'}
+                                    
+                                    >
+                                    {
+                                          paginatedProducts.map((productDataCard, index) => (
                                                 <Grid item lg={4} sm={6} xs={12} key={index}>
-                                                      <ProductsDisplayCard 
+                                                      <ProductsDisplayCard
                                                             i={index}
                                                             handleProductClick={handleProductClick}
                                                             checker={open}
                                                             ProductCategory={productDataCard.ProductCategory}
                                                             ProductName={productDataCard.productName}
                                                             ProductImageLink={productDataCard.productImageLink}
-                                                            />
-                                                      <Backdrop
-            sx={{backgroundColor:'rgba(3, 3, 3, 0.2)',opacity:'0.1', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-            open={open}
-            onClick={handleClose}
-            >
-        <ProductView
-                  i={ind}
-                  handleProductClick={handleProductClick}
-                  checker={open}
-                  ProductName={productsCardsData[ind].productName}
-                  ProductImageLink={productsCardsData[ind].productImageLink}
-                  ProductDiscription={productsCardsData[ind].ProductDiscription}
-      />
-      </Backdrop>
+                                                      />
                                                 </Grid>
-                                          )
-                                    })
-                              }
-                  </Grid>
-     
-                  <Box sx={{
-                        display:'flex',
-                        justifyContent:'center'
-                  }}>
-
-            <Stack spacing={2} marginTop={10} >
-            <Pagination count={numberOfpages} defaultPage={1} showFirstButton showLastButton 
-                        onChange={(e, value) => {setPageNumber(value);
-                                                 window.scrollTo({top:0,behavior:'smooth'})
-                        }}/>
-      </Stack>
-                  </Box>
-     
-            </div>
-            </>
-      )
-}
+                                          ))
+                                    }
+                              </Grid>
+                              <Backdrop
+                                    sx={{
+                                          backgroundColor: 'rgba(3, 3, 3, 0.9)', // Adjusted opacity for visibility
+                                          zIndex: (theme) => theme.zIndex.drawer + 1,
+                                    }}
+                                    open={open}
+                                    onClick={handleClose}
+                              >
+                                    {productsCardsData[ind + (pageNumber - 1) * 6] && (
+                                          <ProductView
+                                                i={ind + (pageNumber - 1) * 6}
+                                                handleProductClick={handleProductClick}
+                                                checker={open}
+                                                ProductName={productsCardsData[ind + (pageNumber - 1) * 6].productName}
+                                                ProductImageLink={productsCardsData[ind + (pageNumber - 1) * 6].productImageLink}
+                                                ProductDiscription={productsCardsData[ind + (pageNumber - 1) * 6].ProductDiscription}
+                                          />
+                                    )}
+                              </Backdrop>
+                              <Box sx={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    marginTop: 7,
+                              }}>
+                                    <Stack spacing={2}>
+                                          <Pagination count={numberOfpages}
+                                                defaultPage={1}
+                                                siblingCount={1}
+                                                showFirstButton
+                                                showLastButton
+                                                boundaryCount={2}
+                                                onChange={(e, value) => {
+                                                      setPageNumber(value);
+                                                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                }}
+                                                sx={{
+                                                      '& .MuiPaginationItem-root': {
+                                                            color: 'white',
+                                                      },
+                                                      '& .MuiPaginationItem-page.Mui-selected': {
+                                                            background: '#FF204E',
+                                                            opacity: '0.8'
+                                                      },
+                                                }}
+                                          />
+                                    </Stack>
+                              </Box>
+                        </Box>
+                  </>
+            );
+      }
 }

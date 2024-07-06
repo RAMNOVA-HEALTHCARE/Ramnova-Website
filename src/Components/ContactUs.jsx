@@ -36,7 +36,7 @@ export default function ContactUs() {
 
   return (
     <Box sx={{ backgroundColor: '#f5f5f5', padding: '2rem 0' }}>
-      <Container maxWidth="md">
+      <Container>
         <Typography variant="h4" align="center" sx={{textDecoration: 'underline' , mb: '0.5em'}}  gutterBottom>
           Contact Us
         </Typography>
@@ -99,7 +99,8 @@ export default function ContactUs() {
               onChange={handleChange}
               required
             />
-            <Button variant="contained" color="primary" maxWidth="10%" type="submit" marginX="auto" sx={{ backgroundColor: '#222323', color: 'white', '&:hover': { backgroundColor: '#FFF3C7',color:'black' } }}>
+            <Button variant="contained" color="primary" maxwidth="10%" type="submit" marginx="auto"
+            sx={{ backgroundColor: '#222323', color: 'white', '&:hover': { backgroundColor: '#FFF3C7',color:'black' } }}>
               Send Message
             </Button>
           </Box>
