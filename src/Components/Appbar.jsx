@@ -14,7 +14,7 @@ import { useMediaQuery } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
 
-const pagesInfo = [{ page: 'home', pageLink: '/home' },
+const pagesInfo = [{ page: 'home', pageLink: '/' },
 { page: 'products', pageLink: '/products' },
 { page: 'about Us', pageLink: '/aboutUs' },
 { page: 'contact Us', pageLink: '/contactUs' }
@@ -100,7 +100,7 @@ function Appbar() {
                                     }}
                               />
                               <Box sx={{ display: 'block' }}>
-                                    <Link to="/home"
+                                    <Link to="/"
                                           onClick={()=>setActivePage('Home')}
                                           style={{ color: "inherit", textDecoration: 'none' }}>
 

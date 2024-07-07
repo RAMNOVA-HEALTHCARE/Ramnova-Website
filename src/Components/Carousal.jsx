@@ -3,9 +3,22 @@ import { Box, Card, Typography, IconButton } from "@mui/material";
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import CarousalCardData from '../assets/Data/CarousalCardsData.json';
+import { LinearProgress } from "@mui/material";
 import "../assets/Styles/Carousal.css";
-import {LinearProgress } from "@mui/material"
+import CarousalCardData from '../assets/Data/CarousalCardsData.json';
+
+// Import images
+import localImage1 from '../assets/Images/trees.jpg';
+import localImage2 from '../assets/Images/bg_quality.png';
+import localImage3 from '../assets/Images/lab.png';
+import localImage4 from '../assets/Images/prod-bg.png';
+
+const imageMap = {
+  "trees.jpg": localImage1,
+  "bg_quality.png": localImage2,
+  "lab.png": localImage3,
+  "prod-bg.png": localImage4,
+};
 
 const childFactory = (direction) => (child) => {
   return React.cloneElement(child, {
@@ -14,15 +27,17 @@ const childFactory = (direction) => (child) => {
 };
 
 export default function Carousal() {
-  const [imagesNames, setImagesNames] = useState([]);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState("slide-left");
   const [cardsDataLocal, setCardsDataLocal] = useState([]);
 
   useEffect(() => {
-    const data = CarousalCardData.CarousalCardsData;
-    setCardsDataLocal(data);
-    setImagesNames(data.map(item => item.backgroundImageLink));
+    // Map image names to image paths
+    const dataWithImages = CarousalCardData.map(card => ({
+      ...card,
+      backgroundImageLink: imageMap[card.backgroundImageName]
+    }));
+    setCardsDataLocal(dataWithImages);
   }, []);
 
   useEffect(() => {
@@ -30,31 +45,30 @@ export default function Carousal() {
       slideRight();
     }, 7000);
     return () => clearInterval(interval);
-  },);
+  }, []);
 
-  const slideLeft=()=>{
-            const nextIndex=index-1;
-            if(nextIndex<0){
-                  setIndex(imagesNames.length - 1);
-            }
-            else{
-                  setIndex(nextIndex);
-            }
-            setDirection('slide-left');
-      };
+  const slideLeft = () => {
+    const nextIndex = index - 1;
+    if (nextIndex < 0) {
+      setIndex(cardsDataLocal.length - 1);
+    } else {
+      setIndex(nextIndex);
+    }
+    setDirection('slide-left');
+  };
 
-      const slideRight=()=>{
-        setIndex((index+1)%imagesNames.length);
-        setDirection('slide-right');
+  const slideRight = () => {
+    setIndex((index + 1) % cardsDataLocal.length);
+    setDirection('slide-right');
   };
 
   const handleKeyDown = (event) => {
     if (event.key === 'ArrowLeft') {
-        slideLeft();
+      slideLeft();
     } else if (event.key === 'ArrowRight') {
-        slideRight();
+      slideRight();
     }
-};
+  };
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
@@ -63,50 +77,50 @@ export default function Carousal() {
     };
   });
 
-  if (imagesNames.length === 0) {
+  if (cardsDataLocal.length === 0) {
     return <LinearProgress />;
   }
 
-  const imageUrl = imagesNames[index];
-  const bodyText = cardsDataLocal[index]?.bodyText;
-  const headingText=cardsDataLocal[index]?.headingText;
-  const heighlightedHeadingText=cardsDataLocal[index]?.heighlightedHeadingText
+  const currentCard = cardsDataLocal[index];
   return (
     <Box style={{ height: 'calc(100vh - 70px)' }} className="image-slider">
-      <Card style={{ height: 'calc(100vh - 70px)', borderRadius: "0" ,backgroundColor:'black'}} className="image-wrapper">
-      <IconButton style={{position: 'absolute', left: 0,top:'calc(50vh - 55px)',zIndex:'2'}}>
-                              <Box sx={{
-                                    ':hover': {
-                                      backgroundColor:'#A0937D',
-                                          cursor: 'pointer',
-                                    },
-                                    '@media (min-width: 960px)': {
-                                          height: '55px',
-                                          width: '55px',
-                                    },
-                                    '@media (min-width: 320x)': {
-                                          height: '35px',
-                                          width: '35px',
-                                    },
-                                    backgroundColor: 'grey',
-                                    height: '25px',
-                                    width: '25px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    borderRadius: '50%',
-                              }}>
-                                    <ArrowLeftIcon 
-                                                sx={{ color: '#FDFFD2', 
-                                                         fontSize: '20px',
-                                                         '@media (min-width: 960px)': {
-                                                         fontSize: '55px'
-                                                      },
-                                                '@media (min-width: 320x)': {
-                                                      fontSize: '20px'
-                                                }, }}
-                                                onClick={slideLeft} />  </Box>
-                                                </IconButton>   
+      <Card style={{ height: 'calc(100vh - 70px)', borderRadius: "0", backgroundColor: 'black' }} className="image-wrapper">
+        <IconButton style={{ position: 'absolute', left: 0, top: 'calc(50vh - 55px)', zIndex: '2' }}>
+          <Box sx={{
+            ':hover': {
+              backgroundColor: '#A0937D',
+              cursor: 'pointer',
+            },
+            '@media (min-width: 960px)': {
+              height: '55px',
+              width: '55px',
+            },
+            '@media (min-width: 320x)': {
+              height: '35px',
+              width: '35px',
+            },
+            backgroundColor: 'grey',
+            height: '25px',
+            width: '25px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius: '50%',
+          }}>
+            <ArrowLeftIcon
+              sx={{
+                color: '#FDFFD2',
+                fontSize: '20px',
+                '@media (min-width: 960px)': {
+                  fontSize: '55px'
+                },
+                '@media (min-width: 320x)': {
+                  fontSize: '20px'
+                },
+              }}
+              onClick={slideLeft} />  
+          </Box>
+        </IconButton>
 
         <TransitionGroup childFactory={childFactory(direction)}>
           <CSSTransition key={index} timeout={495} classNames={direction}>
@@ -116,7 +130,7 @@ export default function Carousal() {
               position='absolute'
               height='calc(100vh - 70px)'
               style={{
-                backgroundImage: `url(${imageUrl})`,
+                backgroundImage: `url(${currentCard.backgroundImageLink})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 maxWidth: '100%',
@@ -138,15 +152,15 @@ export default function Carousal() {
                   '@media (max-height: 320px), (max-width: 480px)': {
                     fontSize: '40px'
                   }
-                }}>{headingText}<span style={{ color: "#E88D67" }}> {heighlightedHeadingText}</span></Typography>
-                 <Typography
-                variant="body2"
-                color='white'
-                paddingY={'10px'}
-              fontSize={'1rem'}
-            >
-              {bodyText}
-            </Typography>
+                }}>{currentCard.headingText}<span style={{ color: "#E88D67" }}> {currentCard.heighlightedHeadingText}</span></Typography>
+                <Typography
+                  variant="body2"
+                  color='white'
+                  paddingY={'10px'}
+                  fontSize={'1rem'}
+                >
+                  {currentCard.bodyText}
+                </Typography>
               </Box>
               <Typography variant="h6"
                 sx={{
@@ -178,39 +192,41 @@ export default function Carousal() {
           </CSSTransition>
         </TransitionGroup>
 
-       <IconButton style={{ position: 'absolute', right: 0,top:'calc(50vh - 55px)'}}>
-                              <Box sx={{
-                                    ':hover': {
-                                          backgroundColor:'#A0937D',
-                                          cursor: 'pointer',
-                                    },
-                                    '@media (min-width: 960px)': {
-                                          height: '55px',
-                                          width: '55px',
-                                    },
-                                    '@media (min-width: 320x)': {
-                                          height: '35px',
-                                          width: '35px',
-                                    },
-                                    backgroundColor: 'grey',
-                                    height: '25px',
-                                    width: '25px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    borderRadius: '50%',
-                              }}>
-                                    <ArrowRightIcon sx={{ color: '#FDFFD2', 
-                                                         fontSize: '20px',
-                                                         '@media (min-width: 960px)': {
-                                                         fontSize: '55px'
-                                                      },
-                                                '@media (min-width: 320x)': {
-                                                      fontSize: '20px'
-                                                }, }}
-                                                onClick={slideRight} />
-                              </Box>
-                  </IconButton>   
+        <IconButton style={{ position: 'absolute', right: 0, top: 'calc(50vh - 55px)' }}>
+          <Box sx={{
+            ':hover': {
+              backgroundColor: '#A0937D',
+              cursor: 'pointer',
+            },
+            '@media (min-width: 960px)': {
+              height: '55px',
+              width: '55px',
+            },
+            '@media (min-width: 320x)': {
+              height: '35px',
+              width: '35px',
+            },
+            backgroundColor: 'grey',
+            height: '25px',
+            width: '25px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius: '50%',
+          }}>
+            <ArrowRightIcon sx={{
+              color: '#FDFFD2',
+              fontSize: '20px',
+              '@media (min-width: 960px)': {
+                fontSize: '55px'
+              },
+              '@media (min-width: 320x)': {
+                fontSize: '20px'
+              },
+            }}
+              onClick={slideRight} />
+          </Box>
+        </IconButton>
       </Card>
     </Box>
   );
