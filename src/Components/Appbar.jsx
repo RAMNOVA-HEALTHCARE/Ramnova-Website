@@ -65,12 +65,14 @@ function Appbar() {
       };
 
       const handleCloseNavMenu = () => {
+            window.scrollTo({top:0,behavior:'instant'});
             setAnchorElNav(null);
       };
       const navigate = useNavigate();
 
       const handleClick = (pageInfo) => {
             navigate(pageInfo.pageLink); 
+            window.scrollTo({top:0,behavior:'instant'});
       };
 
       return (
