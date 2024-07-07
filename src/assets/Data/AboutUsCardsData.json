@@ -1,17 +1,15 @@
 {
       "cardData":[
-        {
-          "contentImageKey": "aboutUs1",
-          "contentText": " We have established world-class facilities by leveraging state-of-the-art technology, incorporating best practices and adhering to stringent regulatory compliances. Our products are fully approved by prestigious supreme health authorities. We possess end-to-end capabilities – from Lab scale development to Pilot scale up and from commercializing the product for large scale manufacturing to marketing globally. We are engaged at manufacturing, supplying, and marketing of pharmaceutical drugs all over the country."
-        },
-        {
-          "contentImageKey": "aboutUs2",
-          "contentText": "At Ramnova Healthcare, we achieve our objective by following our defined values. Our main principle is to do things better than before. Whether it’s for developing new products with multiple-benefits, creating drug delivery devices that produce less discomfort for patients, or getting lower-cost drugs to people with rare diseases, we’re always focused on improving the status quo."
-        },
-        {
-          "contentImageKey": "aboutUs3",
-          "contentText": "Our goal is to become one of the leading pharmaceutical companies pan India by way of Growing business through Customer trust. Improving Completence day after day."
-        }
+                        {  
+                              "contentImageLink":"/src/assets/Images/aboutUs1.png",
+                              "contentText":" We have established world-class facilities by leveraging state-of-the-art technology, incorporating best practices and adhering to stringent regulatory compliances. Our products are fully approved by prestigious supreme health authorities. We possess end-to-end capabilities – from Lab scale development to Pilot scale up and from commercializing the product for large scale manufacturing to marketing globally. We are engaged at manufacturing, supplying, and marketing of pharmaceutical drugs all over the country."
+                        },
+                        {
+                              "contentImageLink":"/src/assets/Images/aboutUs2.png",
+                              "contentText":"At Ramnova Healthcare, we achieve our objective by following our defined values. Our main principle is to do things better than before. Whether it’s for developing new products with multiple-benefits, creating drug delivery devices that produce less discomfort for patients, or getting lower-cost drugs to people with rare diseases, we’re always focused on improving the status quo."},
+                        {
+                              "contentImageLink":"/src/assets/Images/aboutUs3.png",
+                              "contentText":"Our goal is to become one of the leading pharmaceutical companies pan India by way of Growing business through Customer trust. Improving Completence day after day."}
+                        
       ]
-    }
-    
+}
