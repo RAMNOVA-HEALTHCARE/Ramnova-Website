@@ -1,13 +1,13 @@
 {
       "ProductsData":[
             {
-                  "productImageLink":"./src/assets/Images/allprod/a.jpg",
+                  "productImageLink":"..assets/Images/allprod/a.jpg",
                   "productName":"ACEORAM-P",
                   "ProductDiscription":"Aceclofenac 100 mg + Paracetamol 325 mg Tablets",
                   "ProductCategory":"Tablets"
             },
             {
-                  "productImageLink":"./src/assets/Images/allprod/b.jpg",
+                  "productImageLink":"..assets/Images/allprod/b.jpg",
                   "productName":"ACEORAM-SP",
                   "ProductDiscription":"Aceclofenac 100 mg + Paracetamol 325 mg + Serratiopeptidase 15 mg Tablets",
                   "ProductCategory":"Tablets"

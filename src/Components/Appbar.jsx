@@ -24,6 +24,11 @@ const pagesInfo = [{ page: 'home', pageLink: '/home' },
 
 ];
 
+import logo from '../assets/Images/LOGO.png';
+import textlogo from '../assets/Images/Ramnova-white.png';
+
+
+
 function Appbar() {
 
       const location = useLocation();
@@ -87,8 +92,8 @@ function Appbar() {
                               },
                         }}>
                               <img
-                                    src="../src/assets/Images/LOGO.png"
-                                    alt="NSS logo"
+                                    src={logo}
+                                    alt="logo"
                                     loading="lazy"
                                     style={{
                                           width: isMediumScreen ? (isLargeScreen ? '60px' : '50px') : '50px',
@@ -100,7 +105,7 @@ function Appbar() {
                                           style={{ color: "inherit", textDecoration: 'none' }}>
 
                                     <img
-                                                    src="../src/assets/Images/ramnova-white.png"
+                                                    src={textlogo}
                                                     alt="Ramnova HealthCare"
                                                     style={{ marginLeft:'1em' , maxWidth: '35%', height: 'auto' }}
                                                 />

@@ -26,6 +26,7 @@ function App() {
       <Router>
         <Appbar/>
         <Routes>
+            <Route path='/' element={<><Carousal/><AboutRamnova/><FeatureBox/><Slider/></>}/>
             <Route path='/home' element={<><Carousal/><AboutRamnova/><FeatureBox/><Slider/></>}/>
             <Route path='/aboutUs'element={<><AboutUs/></>}/>
             <Route path='/products'element={<><Products/></>}/>
