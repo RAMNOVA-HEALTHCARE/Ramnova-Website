@@ -13,7 +13,7 @@ export default function AboutUs() {
   useEffect(() => {
     setCardDatalocal(CardDataFile.cardData);
   }, []);
-  const backgroundImageLink = './src/assets/Images/who.jpg';
+  const backgroundImageLink = 'https://i.imgur.com/y2eU7XI.jpg';
 
   //app doesnt break while fetching and displays a loading "bar"
   if (cardDatalocal.length === 0) {
