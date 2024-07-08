@@ -65,7 +65,6 @@ function Appbar() {
       };
 
       const handleCloseNavMenu = () => {
-            window.scrollTo({top:0,behavior:'instant'});
             setAnchorElNav(null);
       };
       const navigate = useNavigate();
@@ -186,8 +185,8 @@ sx={{
                                                             textDecoration: 'none',
                                                       }}>
                                                             <MenuItem
-                                                                  onClick={() => {
-                                                                       
+                                                                  onClick={(e) => {
+                                                                        e.stopPropagation();
                                                                         handleCloseNavMenu();
                                                                   }}
                                                                   sx={{
