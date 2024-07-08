@@ -46,32 +46,23 @@ const FeatureBox = ({ icon, title, subtitle }) => (
 
 const FeatureSection = () => {
   return (
-    <Box sx={{ 
+    <Box
+    
+    sx={{ 
       bgcolor: '#3D1F2B', 
       display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      py: 2.5, // Added vertical padding
-      height: '10em', // Allow height to adjust based on content
+      justifyContent: 'center',      
       overflow: 'hidden',
-    //   mt: '100px',
-    //   mb: '100px'
     }}>
       <Grid 
         container 
         spacing={2} 
         maxWidth="lg" 
+        px={1}
         sx={{
         display: 'flex',
-          margin: '0px',
-          mt: '-1.8em',
-        //   gap: {
-        //     xs: '8px', // Spacing for extra-small screens
-        //     sm: '16px', // Spacing for small screens
-        //     md: '24px', // Spacing for medium screens
-        //     lg: '32px', // Spacing for large screens
-        //     xl: '40px', // Spacing for extra-large screens
-        //   },
+          margin: '20px',
+          paddingBottom:'20px'
         }}
       >
         <Grid item xs={12} sm={6} md={3}>

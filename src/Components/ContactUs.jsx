@@ -115,6 +115,16 @@ export default function ContactUs() {
             '& > :not(:last-child)': {
               marginRight: '1rem', // Space between boxes
             },
+            '@media (max-width: 700px)':{
+              maxWidth: '80%',
+              flexDirection:'column',
+              justifyContent:'center',
+              alignItems:'center',
+              marginX:'auto',
+              '& > :not(:last-child)': {
+              marginRight: '0rem', // Space between boxes
+            },
+            },
           }}
         >
           <Paper
@@ -133,6 +143,9 @@ export default function ContactUs() {
               },
               flex: '1 1 300px', // Equal width for all boxes, adjust as needed
               minWidth: '200px', // Minimum width to ensure responsiveness
+              width:'60%',
+              
+              marginBottom:'10px'
             }}
           >
             <PhoneIcon sx={{ fontSize: 25 }} />
@@ -155,6 +168,9 @@ export default function ContactUs() {
               },
               flex: '1 1 300px', // Equal width for all boxes, adjust as needed
               minWidth: '200px', // Minimum width to ensure responsiveness
+              width:'60%',
+              marginBottom:'10px'
+
             }}
           >
             <EmailIcon sx={{ fontSize: 25 }} />
@@ -177,6 +193,10 @@ export default function ContactUs() {
               },
               flex: '1 1 300px', // Equal width for all boxes, adjust as needed
               minWidth: '200px', // Minimum width to ensure responsiveness
+              width:'60%',
+              
+              marginBottom:'10px',
+              // marginX:'auto'
             }}
           >
             <LocationOnIcon sx={{ fontSize: 25 }} />

@@ -71,6 +71,7 @@ function Appbar() {
 
       const handleClick = (pageInfo) => {
             navigate(pageInfo.pageLink); 
+            window.scrollTo({top:0,behavior:'instant'});
       };
 
       return (
@@ -184,8 +185,8 @@ sx={{
                                                             textDecoration: 'none',
                                                       }}>
                                                             <MenuItem
-                                                                  onClick={() => {
-                                                                       
+                                                                  onClick={(e) => {
+                                                                        e.stopPropagation();
                                                                         handleCloseNavMenu();
                                                                   }}
                                                                   sx={{

@@ -36,7 +36,7 @@ export default function Products() {
     };
 
     const filteredProducts = useMemo(() => {
-        return productsCardsData.filter(product => 
+        return productsCardsData.filter(product =>
             product.productName.toLowerCase().includes(searchTerm.toLowerCase())
         );
     }, [searchTerm, productsCardsData]);
@@ -70,15 +70,29 @@ export default function Products() {
                         boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                         '@media (max-width:470px)': {
                             padding: '15px'
+                        },
+                        '@media (max-width:370px)': {
+                            padding: '0px'
                         }
                     }}
                 >
-                    <Box 
+                    <Box
                         sx={{
                             display: 'flex',
                             justifyContent: 'space-between',
                             alignItems: 'center',
                             marginBottom: '2.5em',
+                            '@media (max-width:870px)':{
+                                flexDirection:'column',
+                                alignItems: 'normal',
+                            },
+                            '@media (max-width:375px)':{
+                                paddingTop:'10px',
+                                    justifyContent:'center',
+                                alignItems: 'center',
+                                    // flexDirection:'row',
+                                    // width:'100%',
+                                }
                         }}
                     >
                         <Typography
@@ -95,17 +109,41 @@ export default function Products() {
                         >
                             Our Products
                         </Typography>
-                        <TextField 
-                            label="Search Products"
-                            variant="outlined"
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            sx={{
-                                width: '100%',
-                                maxWidth: '40%',
-                     
-                            }}
-                        />
+                        <Box sx={{
+                                display:'flex',
+                                maxWidth:'400px',
+                                // minWidth:'250px',
+                                '@media (max-width:375px)':{
+                                    justifyContent:'center',
+                                    flexDirection:'row',
+                                    // width:'100%',
+                                },
+                                '@media (max-width:870px)':{
+                                    // flexDirection:'row',
+                                    width:'100%',
+                                    flexDirection:'row-reverse',
+                                },
+                                width:'40%'
+                                }}>
+                                <TextField
+                                    label="Search Products"
+                                    variant="outlined"
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                    sx={{
+                                        width: '100%',
+                                        '@media (max-width:375px)':{
+                                            // justifyContent:'center',
+                                            // flexDirection:'row',
+                                            width:'100%',
+                                        },
+                                        '@media (max-width:870px)':{
+                                            marginTop:'20px',
+                                            width:'60%' 
+                                        }
+                                    }}
+                                    />
+                        </Box>
                     </Box>
                     <Grid container
                         spacing={5}
