@@ -124,9 +124,7 @@ function Appbar() {
                                                 borderBottom:activePage==pageInfo.page?"1px solid #FF204E":'none',
                                                 borderRadius:'0',
                                                 display: 'block',
-                                                // backgroundColor:activePage==pageInfo.page?"grey":'none',
                                                 ':hover': {
-                                                      // color: '#74512D',    
                                                       cursor: 'pointer',
                                                 },
                                           }}
@@ -178,17 +176,8 @@ sx={{
                                           >
                                           <MenuList >
                                                 {pagesInfo.map((pageInfo) => (
-                                                      <Link to={pageInfo.pageLink}
-                                                      key={pageInfo.page}
-                                                      style={{
-                                                            color: "white",
-                                                            textDecoration: 'none',
-                                                      }}>
                                                             <MenuItem
-                                                                  onClick={(e) => {
-                                                                        e.stopPropagation();
-                                                                        handleCloseNavMenu();
-                                                                  }}
+                                                                  onClick={() => {handleClick(pageInfo),handleCloseNavMenu()}}
                                                                   sx={{
                                                                         background: '#353A40',
                                                                         color: 'white',
@@ -200,7 +189,6 @@ sx={{
                                                                   }}>
                                                                   <Typography textAlign="right">{pageInfo.page}</Typography>
                                                             </MenuItem>
-                                                      </Link>
                                                 ))}
                                           </MenuList>
                                     </Menu>
