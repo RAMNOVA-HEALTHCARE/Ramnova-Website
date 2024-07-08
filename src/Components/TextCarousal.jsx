@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/Styles/Text.css'; // Import the CSS for sliding effect
-
+import { Box } from '@mui/material';
 const testimonials = [
   {
     quote: "Our sole responsibility - For the People. Towards the People. To provide quality medicines.",
@@ -56,15 +56,21 @@ const TextCarousel = () => {
   };
 
   return (
-    <div style={{ 
+    <Box style={{ 
       backgroundColor: '#f8f8f8', 
       padding: '2em 3em', 
-      maxWidth: '35%', 
       margin: 'auto',
       textAlign: 'center',
       position: 'relative',
       borderRadius: '30px'
-    }}>
+    }}
+    sx={{
+      maxWidth: '35%', 
+      '@media (max-width: 700px)':{
+        maxWidth: '80%', 
+      },
+    }}
+    >
       <h2 style={{ 
         fontFamily: '"Mundo Serif Medium", serif',
         fontSize: '2.5em',
@@ -111,7 +117,7 @@ const TextCarousel = () => {
           }}></span>
         ))}
       </div>
-    </div>
+    </Box>
   );
 };
 
